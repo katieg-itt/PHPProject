@@ -1,0 +1,263 @@
+/* CSS Document */
+body{
+  background-color: #585858;
+  font-size:62.5%;
+  margin:0; /* get rid of space at the bottom */
+}
+
+h2 {
+  font-size:2.5em;
+}
+h3 {
+  font-size:1.5em;
+}
+#wrapper {
+  width: 800px;             /*Goes around whole site to keep centered */
+  margin: auto;
+}
+/* Header Stuff */
+#header {
+  background-image:url('../images/header.png');  /* Image made in photoshop, Winged Star brought in from google images(http://www.yujean.com/shop/images/ja123.jpg)*/
+  padding-top:160px;
+}
+#header h3 {
+  margin:0 0 10px 0;
+  width:40%;
+  text-align:center;
+  float:left;
+  font-family: Georgia;
+}
+#header h2 {
+  width:40%;
+  float:right;
+  text-align:center;
+  font-family: Georgia;
+}
+#menu {
+  clear:both;         /* force content to new line, use after float */
+}
+#menu a {
+  display: inline-block;
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 1.6em;
+  font-family: verdana;
+}
+#menu a:hover{
+  background-color:#800000;
+}
+#menu a.this_page {
+  background-color:#800000;
+}
+/* Content */
+#content {
+  border-left:5px solid black;
+  border-right:5px solid black;
+  background-color:#c9c0c9;
+  margin:0;  /* fixes space above headers http://stackoverflow.com/questions/13573653/css-margin-terror-margin-adds-space-outside-parent-element */
+  display:inline-block;
+  width:790px;
+}
+.body_text{
+  width: 80%;
+  margin: 10px auto;
+}
+.contact_text{
+  margin-left:10px;
+}
+.our-work{
+  margin:0 30px;
+}
+h2.pageheader{
+  padding-left:15px;
+}
+#content {
+  font-size:1.5em;
+}
+#content h2 {
+  font-size:1.6em;
+}
+#content h4{
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#content ul{
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+#home_page_top img{
+  margin-top: 10px;
+  margin-left: 15px;
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;  
+}
+#home_page_top h1 {
+  padding-left:10px;
+  font-size: 1.6em;
+  font-family: Georgia;
+}
+#home_page_top p {
+  margin-left:10px;
+  margin-right: 15px;
+  line-height: 1.9em;
+  font-size: 1.1em;
+  font-family: Verdana;
+}
+#home_page_bottom {
+  padding:15px;
+  font-family: Georgia;
+}
+#header_text{
+  width: 45%;
+  float: right;
+}
+.artist{
+  clear:both;         /* This stops the image going into the div under it with floats */
+  padding: 10px 15px;
+
+}
+.artist p {
+  width: 60%;
+  float: right;
+  font-family: Verdana;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+#buttons{
+  padding-left: 10px;
+  clear: both;
+}
+#pricing {
+  width:80%;
+  margin: 30px auto 10px auto;
+  border:1px solid #666;
+  border-collapse:collapse; /*http://www.w3schools.com/cssref/pr_border-collapse.asp*/
+}
+#pricing th {
+  color:white;
+  background-color:black;
+}
+#pricing td {
+  width:35%;
+  border-bottom:1px solid #666;
+  padding-left:10px;
+}
+#pricing td.price {
+  width:15%;
+  text-align:right;
+  padding-right:10px;
+  border-right:1px solid #666;
+  font-weight:bold;
+}
+/* Footer Stuff */
+#footer {
+  clear:both;
+  background-color:#000000;
+  color:#ffffff;
+  padding:5px 15px;
+  font-size:1.4em;
+}
+#copy {
+  text-align:left;
+}
+#to_top {
+  float:right;
+}
+#home_page{
+  float:right;
+  padding-right: 10px;
+}
+#site_map{
+  float: right;
+  padding-right: 10px;
+}
+#footer a {
+  color:#FFFFFF; 
+  text-decoration:none;
+}
+#footer a:hover {
+  color:#585858; 
+  text-decoration:underline;
+}
+.gallery {
+  clear:both;
+}
+.gallery h2 {
+  margin:0 0 0 20px;
+  padding-top:10px;
+}
+.gallery .img {
+  width:155px;
+  height:230px;
+  background-color:green;
+  float:left;
+  margin:10px 19px;
+}
+.gallery img {
+  width:155px;
+  height:230px;
+  float:left;
+  margin:10px 20px;
+  border:1px solid black;
+}
+#form {
+  padding:10px
+}
+#form label { 
+  display:block; 
+}
+#form .contactForm {
+  margin-bottom:10px;
+  line-height:1.5em;
+  font-size:1.1em;
+  width:80%;
+  padding:5px;
+}
+
+.datatable, .formtable, .ordertable {
+  margin:20px auto;
+  border-collapse: collapse;
+}
+
+.datatable th, .formtable th, .ordertable th {
+  background-color:#800000;
+  color:#ffffff;
+  border: 1px solid black;
+  padding:7px;
+  text-align:left;
+  font-weight:normal;
+}
+
+.datatable td, .formtable td, .ordertable td {
+  border: 1px solid black;
+  padding:7px;
+}
+
+.formtable .label {
+  text-align:right;
+}
+
+.formtable input, .formtable select {
+  width:200px;
+  padding:5px;
+}
+
+.formtable .button {
+  text-align:center;
+}
+
+.headerimg {
+  width:650px; 
+  display:block; 
+  margin: 5px auto; 
+  border:1px solid black;
+}
+
+
